@@ -1,0 +1,167 @@
+/*	------------------------------------------------------------------
+	body/global/reset Styles
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+	body {
+		margin:0;
+		padding:0 0 0 0;
+		line-height: 1;
+		background:#fff;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	/* tables still need 'cellspacing="0"' in the markup */
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	.altText {
+		width:0; height:0;
+		display:block;
+		overflow:hidden;
+	}
+	.cleaner {
+		clear:both;
+		height:0px;
+		font-size:1px;
+		overflow:hidden;
+		border:none;
+		margin:0; padding:0;
+		background:transparent;
+	}
+	.clearfix:after {
+		content: ".";
+		display: block;
+		clear:both;
+		visibility:hidden;
+		line-height:0;
+		height:0;
+	}
+	.clearfix {
+		display:inline-block;
+	}
+	html[xmlns] .clearfix {
+		display:block;
+	}
+	* html .clearfix {
+		height:1%;
+	}
+	a:link, a:visited {
+		color: #a3030f;
+		text-decoration: none;
+	}
+	a:hover {
+		color:#ccc;
+	}
+
+
+.content {
+	width:100%;
+	font-family: 'Lato', Arial, sans-serif;
+}
+
+/*
+sidenav 
+*/
+
+.sidenav {
+	max-width: 250px;
+	margin: 20px 0 0 30px;
+	position: fixed;
+}
+
+.sidenav .logo {
+	text-align: left;
+}
+
+.sidenav .nav {
+	height: 100%;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding: 0;
+}
+
+.sidenav .nav ul {
+	padding: 0;
+	margin: 10px 0 10px 0;
+	text-align: left;
+}
+
+.sidenav .nav li {
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.sidenav .nav-footer .social img {
+	max-width: 50px;
+	height: auto;
+}
+
+/*
+Main
+*/
+
+.main {
+	max-width: 600px;
+	margin: 0 0 0 290px;
+	padding-bottom: 60px;
+	display: inline-block;
+}
+
+.main .mission-statement {
+	margin: 0 auto;
+}
+
+.main h1 {
+	
+}
+
+.main p {
+	text-align: left;
+	line-height: 30px;
+}
+
+.main .enter-btn {
+	margin-top: 40px;
+}
+
+.main .enter-btn a {
+	padding: 10px;
+	font-size: 16px;
+	text-decoration: none;
+	color: white;
+	background:#a3030f;
+	cursor: pointer;
+}
+
+.main .enter-btn a:hover {
+	font-size: 16px;
+	text-decoration: none;
+	color: white;
+	background:#CCC;
+	cursor: pointer;
+}
+
+/*
+Footer
+*/
+
+.footer {
+
+}
+
+.footer .links {
+}
+
+.footer .copyright {
+}
+
