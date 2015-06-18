@@ -69,6 +69,23 @@
 	font-weight: 400;
 }
 
+.btn a {
+	padding: 10px;
+	font-size: 16px;
+	text-decoration: none;
+	color: white;
+	background:#a3030f;
+	cursor: pointer;
+}
+
+.btn a:hover {
+	font-size: 16px;
+	text-decoration: none;
+	color: white;
+	background:#CCC;
+	cursor: pointer;
+}
+
 /*
 sidenav 
 */
@@ -140,25 +157,8 @@ Main
 	line-height: 30px;
 }
 
-.main .enter-btn {
+.main .enter {
 	margin-top: 40px;
-}
-
-.main .enter-btn a {
-	padding: 10px;
-	font-size: 16px;
-	text-decoration: none;
-	color: white;
-	background:#a3030f;
-	cursor: pointer;
-}
-
-.main .enter-btn a:hover {
-	font-size: 16px;
-	text-decoration: none;
-	color: white;
-	background:#CCC;
-	cursor: pointer;
 }
 
 /*
@@ -221,6 +221,14 @@ Artists
 	background-size: 35px 35px;
 }
 
+
+/*
+Band Template
+*/
+
+.back-button {
+	margin-top: 20px;
+}
 
 /*
 Footer
