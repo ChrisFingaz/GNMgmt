@@ -86,6 +86,18 @@
 	cursor: pointer;
 }
 
+h1 {
+	font-weight: 700;
+	margin: 0.5em 0 0.3em 0;
+	padding: 10px;
+	background: #000;
+	color: #fff;
+}
+
+tr:nth-child(even) {
+	background: #eee;
+}
+
 /*
 sidenav 
 */
@@ -142,14 +154,6 @@ Main
 .main .mission-statement img {
 	height: auto;
 	width: 100%;
-}
-
-.main h1 {
-	font-weight: 700;
-	margin: 0.5em 0 0.3em 0;
-	padding: 10px;
-	background: #000;
-	color: #fff;
 }
 
 .main p {
@@ -221,6 +225,15 @@ Artists
 	background-size: 35px 35px;
 }
 
+.tour-dates {
+	margin-top: 20px;
+}
+
+.tour-dates h2 {
+	margin: 1em 0 0.3em 0;
+	text-decoration: underline;
+}
+
 
 /*
 Band Template
@@ -242,5 +255,35 @@ Footer
 }
 
 .footer .copyright {
+}
+
+/*------------------------------------------*/
+
+/*
+CSS media query for ios and android phones
+*/
+
+@media only screen 
+  and (min-device-width: 0px) 
+  and (max-device-width: 736px) {
+	.sidenav {
+		display: none;
+	}
+
+	body {
+		text-align: center;
+	}
+
+	.main {
+		max-width: 99%;
+		margin-left: 0;
+		padding-left: 5px;
+		padding-right: 5px;
+		text-align: center;
+	}
+
+	.main p {
+		text-align: center;
+	}	
 }
 
