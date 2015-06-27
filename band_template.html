@@ -2,12 +2,30 @@
 	<head>
 		<title>Graphic Nature :: Management</title>
 		<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="main.css">
+		<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu({
+					slidingSubmenus: false
+				});
+			});
+		</script>
 	</head>
 
 	<body>
 		<div class="content">
 		
+			<div class="header">
+				<a href="#menu"></a>
+				Graphic Nature Management
+			</div>
+
 			<div class="sidenav">
 				<div class="logo">
 					<img src="imgs/pic-logo.jpg" alt="Graphic Nature Management" />
@@ -110,7 +128,16 @@
 
 				</div>
 			</div>
-
 		</div>
+
+		<!-- Mobile nav -->
+		<nav id="menu">
+			<ul>
+				<li><a href="index.html">Mission Statement</a></li>
+				<li><a href="artists.html">Artists</a></li>
+				<li><a href="#">GN Audio</a></li>
+				<li><a href="#">GN Records</a></li>
+			</ul>
+		</nav>
 	</body>
 </html>
