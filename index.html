@@ -2,14 +2,30 @@
 	<head>
 		<title>Graphic Nature :: Management</title>
 		<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu();
+			});
+		</script>
 
 	</head>
 
 	<body>
 		<div class="content">
-		
-			<div class="sidenav">
+			
+			<div class="header">
+				<a href="#menu"></a>
+				Graphic Nature Management
+			</div>
+
+			<div id="main-navigation" class="sidenav">
 				<div class="logo">
 					<img src="imgs/pic-logo.jpg" alt="Graphic Nature Management" />
 				</div>
@@ -34,7 +50,7 @@
 			</div>
 
 			<div class="main">
-				
+
 				<div class="mission-statement">
 
 					<h1>OUR MISSION</h1>
@@ -67,5 +83,26 @@
 			</div>
 
 		</div>
+
+		<nav id="menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#about">About us</a>
+					<ul>
+						<li><a href="#about/history">History</a></li>
+						<li><a href="#about/team">The team</a>
+							<ul>
+								<li><a href="#about/team/management">Management</a></li>
+								<li><a href="#about/team/sales">Sales</a></li>
+								<li><a href="#about/team/development">Development</a></li>
+							</ul>
+						</li>
+						<li><a href="#about/address">Our address</a></li>
+					</ul>
+				</li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+
 	</body>
 </html>
