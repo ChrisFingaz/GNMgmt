@@ -286,6 +286,13 @@ CSS media query for ios and android phones
 		display: none;
 	}
 
+	#menu {
+		font-family: 'Lato', Arial, sans-serif;
+		font-weight: 400;
+		color:#a3030f;
+		background: #fff;
+	}
+
 	.header {
 		display: block;
 		position: fixed;
