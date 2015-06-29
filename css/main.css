@@ -158,7 +158,7 @@ Main
 	margin: 0 auto;
 }
 
-.main .mission-statement img {
+.main img {
 	height: auto;
 	width: 100%;
 }
@@ -190,7 +190,6 @@ Artists
 
 .artists .artist .photo-link img {
 	max-width: 250px;
-	border: 5px solid #a3030f;
 }
 
 .artists .artist .band-links {
@@ -207,28 +206,28 @@ Artists
 .artists .artist .band-links .fb {
 	height: 35px;
 	width: 35px;
-	background-image: url("imgs/social/facebook-square.png");
+	background-image: url("../imgs/social/facebook-square.png");
 	background-size: 35px 35px;
 }
 
 .artists .artist .band-links .twitter {
 	height: 35px;
 	width: 35px;
-	background-image: url("imgs/social/twitter.png");
+	background-image: url("../imgs/social/twitter.png");
 	background-size: 35px 35px;
 }
 
 .artists .artist .band-links .ig {
 	height: 35px;
 	width: 35px;
-	background-image: url("imgs/social/instagram.png");
+	background-image: url("../imgs/social/instagram.png");
 	background-size: 35px 35px;
 }
 
 .artists .artist .band-links .site {
 	height: 35px;
 	width: 35px;
-	background-image: url("imgs/social/website.png");
+	background-image: url("../imgs/social/website.png");
 	background-size: 35px 35px;
 }
 
@@ -294,12 +293,13 @@ CSS media query for ios and android phones
 	}
 
 	.header {
+		height:40px;
 		display: block;
 		position: fixed;
 		text-align: center;
 		width: 100%;
-		padding: 8px 0 8px 0;
-		font-size: 1.5em;
+		font-size: 1em;
+		line-height: 40px;
 		font-weight: 700;
 		background: #fff;
 	}
@@ -325,6 +325,10 @@ CSS media query for ios and android phones
 		top: 0;
 	}
 
+	.header .hdr-text {
+		padding-left: 30px;
+	}
+
 	.sidenav {
 		display: none;
 	}	
@@ -338,13 +342,39 @@ CSS media query for ios and android phones
 		padding: 1em;
 	}
 
-	.mission-statement {
+	.mission-statement,
+	.artists,
+	.band-page {
 		padding-top: 40px;
 		padding-bottom: 20px;
 	}
 
 	.enter {
 		text-align: center;
+	}
+
+	/*Artist overrides*/
+
+	.artists .artist {
+		width: 100%;
+		margin: 0 auto;
+		height: auto;
+		display: block;
+		text-align: center;
+	}
+
+	.artists {
+		width: 100%;
+	}
+
+	.main {
+		width: 100%;
+	}
+
+	/*Band Template overrides*/
+
+	.back-button {
+		display: none;
 	}
 }
 
