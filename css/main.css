@@ -5,7 +5,6 @@
 		margin:0;
 		padding:0 0 0 0;
 		line-height: 1;
-		background:transparent;
 	}
 	ol, ul {
 		list-style: none;
@@ -178,7 +177,6 @@ Main
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	font-size: 300%;
 	text-align: center;
 	position: relative;
 }
@@ -235,26 +233,42 @@ Main
 Artists
 */
 
+.main .artists,
+.main .band-page {
+	margin: 0 0 0 243px;
+	padding-bottom: 60px;
+	padding-left: 30px;
+	padding-right: 0;
+}
+
 .artists .artist {
-	max-width: 250px;
-	margin: 0 8% 0 0;
+	margin: 0 0 5px 0;
 	height: auto;
 	display: inline-block;
 	text-align: center;
 }
 
+.artists .artist h2 {
+	margin: 0;
+	padding: 10px 0 10px 0;
+	color: #fff;
+	background: #000;
+
+}
+
 .artists .artist .photo-link {
-	margin: 0 0 0 0;
+	margin: 0;
 }
 
 .artists .artist .photo-link img {
-	max-width: 250px;
+	max-width: 350px;
 }
 
 .artists .artist .band-links {
-	padding: 0;
-	margin-top: 5px;
+	padding: 10px 0 10px 0;
+	margin: 0;
 	text-align: center;
+	background: #000;
 }
 
 .artists .artist .band-links li {
@@ -379,10 +393,6 @@ CSS media query for ios and android phones
 		height: auto;
 	}
 
-	.main .mission-statement {
-		margin: 0;
-	}
-
 	.header.fixed {
 		position: fixed;
 		top: 0;
@@ -420,11 +430,15 @@ CSS media query for ios and android phones
 		padding: 1em;
 	}
 
-	.mission-statement,
-	.artists,
-	.band-page {
-		padding-top: 40px;
-		padding-bottom: 20px;
+	.main .mission-statement,
+	.main .artists,
+	.main .band-page {
+		padding: 40px 0 20px 0;
+		margin: 0;
+	}
+
+	.main .artists {
+		text-align: center;
 	}
 
 	.enter {
