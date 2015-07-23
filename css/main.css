@@ -103,6 +103,11 @@ h1 {
 	background-position: right;
 }
 
+h2 {
+	font-weight: 700;
+	font-size: 2.5em;
+}
+
 
 tr:nth-child(even) {
 	background: #eee;
@@ -138,8 +143,8 @@ sidenav
 }
 
 .sidenav .nav li {
-	margin-bottom: 20px;
-	font-size: 20px;
+	margin-bottom: 10px;
+	font-size: 16px;
 	font-weight: 700;
 }
 
@@ -233,27 +238,33 @@ Main
 Artists
 */
 
-.main .artists,
-.main .band-page {
+.main .band-page,
+.main .news {
 	margin: 0 0 0 243px;
 	padding-bottom: 60px;
 	padding-left: 30px;
 	padding-right: 0;
 }
 
+.main .artists {
+	margin: 0 0 0 213px;
+	padding-bottom: 60px;
+	padding-left: 30px;
+	padding-right: 0;
+}
+
 .artists .artist {
-	margin: 0 0 5px 0;
 	height: auto;
-	display: inline-block;
+	width: 50%;
+	float: left;
 	text-align: center;
 }
 
 .artists .artist h2 {
 	margin: 0;
 	padding: 10px 0 10px 0;
-	color: #fff;
-	background: #000;
-
+	color: #000;
+	font-size: 30px;
 }
 
 .artists .artist .photo-link {
@@ -261,14 +272,13 @@ Artists
 }
 
 .artists .artist .photo-link img {
-	max-width: 350px;
+	max-width: 100%;
 }
 
 .artists .artist .band-links {
-	padding: 10px 0 10px 0;
+	padding: 10px 0 30px 0;
 	margin: 0;
 	text-align: center;
-	background: #000;
 }
 
 .artists .artist .band-links li {
@@ -323,17 +333,33 @@ Band Template
 }
 
 /*
-Footer
+News
 */
 
-.footer {
-
+.main .news h2 {
+	margin: 20px 0 20px 0;
 }
 
-.footer .links {
+.main .news .entry {
+	margin-bottom: 50px;
 }
 
-.footer .copyright {
+.main .news p {
+	font-size: 20px;
+}
+
+.main .news img {
+	max-height: 400px;
+	width:auto;
+	margin-right: 15px;
+}
+
+.main .news img .textwrap {
+	float: right;
+}
+
+.main .news p .textwrap {
+	float: left;
 }
 
 /*------------------------------------------*/
@@ -469,5 +495,5 @@ CSS media query for ios and android phones
 	.back-button {
 		display: none;
 	}
-}*/
+}
 
