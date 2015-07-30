@@ -60,7 +60,7 @@
 	a:hover {
 		color:#ccc;
 	}
-	
+
 	nav {
 		display: none;
 	}
@@ -114,7 +114,7 @@ tr:nth-child(even) {
 }
 
 /*
-sidenav 
+sidenav
 */
 
 .sidenav {
@@ -177,7 +177,7 @@ Main
 
 .main .mission-header {
 	height:100%;
-	background: url(../imgs/pic-home.jpg) no-repeat left fixed; 
+	background: url(../imgs/pic-home.jpg) no-repeat left fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -188,12 +188,11 @@ Main
 
 .main .mission-header .logo {
 	position: relative;
-	top: 45%;
-	transform: translateY(-45%);
+	top: 15%;
 }
 
 .main .mission-header .logo img{
-	max-height: 15%;
+	max-height: auto;
 	max-width: 15%;
 }
 
@@ -243,7 +242,7 @@ Artists
 	margin: 0 0 0 243px;
 	padding-bottom: 60px;
 	padding-left: 30px;
-	padding-right: 0;
+	padding-right: 10px;
 }
 
 .main .artists {
@@ -320,7 +319,6 @@ Artists
 
 .tour-dates h2 {
 	margin: 1em 0 0.3em 0;
-	text-decoration: underline;
 }
 
 
@@ -330,6 +328,12 @@ Band Template
 
 .back-button {
 	margin-top: 20px;
+}
+
+.videos .video {
+	margin: 3px 0 0 0;
+	display: inline-block;
+	width: 100%;
 }
 
 /*
@@ -368,15 +372,15 @@ News
 CSS media query for ios and android phones
 */
 
-@media only screen 
-  and (min-device-width: 0px) 
+@media only screen
+  and (min-device-width: 0px)
   and (max-device-width: 736px) {
 
 	body {
 	    overflow-x: hidden;
 	    background-position: 0px 0px;
 	}
-	
+
 	nav {
 		display: block;
 	}
@@ -445,7 +449,7 @@ CSS media query for ios and android phones
 
 	.sidenav {
 		display: none;
-	}	
+	}
 
 	.main {
 		max-width: 100%;
@@ -458,7 +462,8 @@ CSS media query for ios and android phones
 
 	.main .mission-statement,
 	.main .artists,
-	.main .band-page {
+	.main .band-page,
+	.main .news {
 		padding: 40px 0 20px 0;
 		margin: 0;
 	}
